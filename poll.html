@@ -9,13 +9,18 @@
 <body>
     <header>
         <h3>Who are your favorite player?</h3>
-    </header>
-   
-    <section>
+    </header> 
+     <main>
          <h4>Your answer</h4>
-     <form method="Post" action="https://formspree.io/myywgrep"
-         <label>Players</label>
+         <form method="POST" action="https://formspree.io/myywgrep">
+         <label>Name:
+                <input type="text" placeholder="Your Name" name="name">
+         </label>
+            <label for="email">Email:</label>
+            <input type="email" placeholder=" Your Email" id="email" name="email">
          <label>
+         <br>
+         <label>Players</label>
              <input type="radio" name="players" value="messi">Messi
          </label> 
          <label>
@@ -25,18 +30,9 @@
              <input type="radio" name="players" value="de jong">De Jong
          </label>
          <br> 
-         <h3>Contact us</h3>   
-             <input type="text" placeholder="Your Name" required name="name">
-         </label>  
-         <label>Email
-             <input type="email" placeholder="Your email" required name="email">
-         </label>    
-             <br>
-             <input type="submit"
-         </label>    
-    </section>
-    <nav>
-        <a href="index.html">Home page</a>
-    </nav>        
+             <input type="submit">        
+        <nav>
+             <a href="index.html">Home page</a>
+        </nav>        
 </body>
 </html>

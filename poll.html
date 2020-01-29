@@ -13,13 +13,6 @@
      <main>
          <h4>Your answer</h4>
          <form method="POST" action="https://formspree.io/myywgrep">
-         <label>Name:
-                <input type="text" placeholder="Your Name" name="name">
-         </label>
-            <label for="email">Email:</label>
-            <input type="email" placeholder=" Your Email" id="email" name="email">
-         <label>
-         <br>
          <label>Players</label>
              <input type="radio" name="players" value="messi">Messi
          </label> 
@@ -29,10 +22,29 @@
          <label>
              <input type="radio" name="players" value="de jong">De Jong
          </label>
+    <header>
+        <h3>Who are your favorite coach ever?</h3>
+    </header> 
+         <h4>Your answer</h4>
+         <label for="coaches-select">Choose a coach:</label>
+         <select name="coaches" id="coaches-select">
+             <option value="pep puardiola">Pep Guardiola</option>
+             <option value="johan cruijff">Johan Cruijff</option>
+             <option value="luis enrique">Luis Enrique</option>
+         </select>
+         <br>
+          <label>Name:
+              <input type="text" placeholder="Your Name" name="name" required>
+          </label>
+          <label>Email:
+              <input type="email" placeholder=" Your Email" id="email" name="email" required>
+         </label>   
          <br> 
-             <input type="submit">        
-        <nav>
-             <a href="index.html">Home page</a>
-        </nav>        
+             <input type="submit">
+     </main>                 
+     <nav>
+         <a href="index.html">Home page</a>
+     </nav>
+         </form>    
 </body>
 </html>
